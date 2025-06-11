@@ -36,6 +36,7 @@ Desarrollar un modelo predictivo y visual que permita identificar zonas y period
 ## Modelo Predictivo Propuesto
 '''mermaid
 flowchart LR
+    subgraph Grupo1[]
 A[Datos históricos] --> B[Preprocesamiento]
 B --> C[Entrenamiento]
 C --> D((Modelo 1: Random Forest<br>Riesgo categórico))
@@ -45,4 +46,5 @@ D --> G[Evaluación]
 E --> G
 F --> G
 G --> H[Dashboard interactivo]
+end
 '''
