@@ -48,4 +48,15 @@ flowchart LR
     G[Evaluación]
     H[Dashboard interactivo]
 end
+
+A-->B
+B-->C
+C-->D
+C-->E
+C-->F
+D-->G
+E-->G
+F-->G
+G-->H
 ```
+
