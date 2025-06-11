@@ -34,9 +34,8 @@ Desarrollar un modelo predictivo y visual que permita identificar zonas y period
 * Visualizaciones interactivas con mapas de calor, series temporales y dashboards.
 
 ## Modelo Predictivo Propuesto
-'''
-mermaid
-graph LR
+'''mermaid
+flowchart LR
 A[Datos históricos] --> B[Preprocesamiento]
 B --> C[Entrenamiento]
 C --> D((Modelo 1: Random Forest<br>Riesgo categórico))
