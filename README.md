@@ -34,17 +34,31 @@ Desarrollar un modelo predictivo y visual que permita identificar zonas y period
 * Visualizaciones interactivas con mapas de calor, series temporales y dashboards.
 
 ## Modelo Predictivo Propuesto
-'''mermaid
+
+```mermaid
 flowchart LR
-    subgraph Grupo1[]
-A[Datos históricos] --> B[Preprocesamiento]
-B --> C[Entrenamiento]
-C --> D((Modelo 1: Random Forest<br>Riesgo categórico))
-C --> E((Modelo 2: XGBoost<br>Superficie afectada))
-C --> F((Modelo 3: Prophet<br>Tendencia mensual))
-D --> G[Evaluación]
+    subgraph Grupo1["Modelo Predictivo"]
+
+    A["Datos históricos"]
+    B["Preprocesamiento"]
+    C["Entrenamiento"]
+    D"[Modelo 1: Random Forest<br>Riesgo categórico"]
+    E["Modelo 2: XGBoost<br>Superficie afectada"]
+    F["Modelo 3: Prophet<br>Tendencia mensual"]
+    G["Evaluación"]
+    H["Dashboard interactivo"]
+end
+
+A --> B
+B --> C
+C --> D
+C --> E
+C --> F
+D --> G
 E --> G
 F --> G
-G --> H[Dashboard interactivo]
-end
-'''
+G --> H
+```
+
+
+
