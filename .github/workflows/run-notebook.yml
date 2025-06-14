@@ -1,0 +1,26 @@
+name: Ejecutar Notebook
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-notebook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar repo
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependencias
+        run: |
+          pip install notebook nbconvert papermill
+
+      - name: Ejecutar notebook
+        run: |
+          papermill Proy.ipynb Proy-output.ipynb
