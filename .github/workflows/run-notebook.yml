@@ -19,7 +19,7 @@ jobs:
 
       - name: Instalar dependencias desde requirements.txt
         run: |
-          pip install -r requirements.txt
+          pip install -r imports.txt
           pip install notebook nbconvert papermill
 
 
